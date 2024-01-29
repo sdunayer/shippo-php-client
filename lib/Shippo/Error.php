@@ -2,6 +2,10 @@
 
 class Shippo_Error extends Exception
 {
+	private $httpStatus;
+	private $httpBody;
+	private $jsonBody;
+
     public function __construct($message, $httpStatus = null, $httpBody = null, $jsonBody = null)
     {
         parent::__construct($message);

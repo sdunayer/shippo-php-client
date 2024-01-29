@@ -55,7 +55,7 @@ abstract class Shippo_ApiResource extends Shippo_Object
     public static function classUrl($class)
     {
         $base = self::_scopedLsb($class, 'className', $class);
-        return "/${base}s";
+        return "/{$base}s";
     }
     
     /**
@@ -72,7 +72,7 @@ abstract class Shippo_ApiResource extends Shippo_Object
         $id = Shippo_Util::utf8($id);
         $base = $this->_lsb('classUrl', $class);
         $extn = urlencode($id);
-        return "$base/$extn";
+        return "{$base}/$extn";
     }
     
     private static function _validateCall($method, $params = null, $apiKey = null)

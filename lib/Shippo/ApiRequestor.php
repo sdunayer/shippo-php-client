@@ -4,7 +4,7 @@ class Shippo_ApiRequestor
     /**
      * @var string $apiKey The API key that's to be used to make requests.
      */
-    public $apiKey;
+    public $_apiKey;
     private static $httpClient;
     
     public function __construct($apiKey = null)
