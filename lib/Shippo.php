@@ -50,3 +50,4 @@ require(dirname(__FILE__) . '/Shippo/Track.php');
 require(dirname(__FILE__) . '/Shippo/Batch.php');
 require(dirname(__FILE__) . '/Shippo/Order.php');
 require(dirname(__FILE__) . '/Shippo/Pickup.php');
+require(dirname(__FILE__) . '/Shippo/Account.php');
