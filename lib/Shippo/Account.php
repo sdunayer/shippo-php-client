@@ -13,7 +13,7 @@ class Shippo_Account extends Shippo_ApiResource
 	/**
 	 *
 	 */
-	public static function create(?array $params = null, ?string $apiKey = null): Shippo_Account
+	public static function create(?array $params = null, ?string $apiKey = null): Shippo_Object
 	{
 		$class = get_class();
 		return self::_scopedCreate($class, $params, $apiKey);
@@ -22,7 +22,7 @@ class Shippo_Account extends Shippo_ApiResource
 	/**
 	 *
 	 */
-	public static function listAll(?array $params = null, ?string $apiKey = null): Shippo_Account
+	public static function listAll(?array $params = null, ?string $apiKey = null): Shippo_Object
 	{
 		$class = get_class();
 		return self::_scopedAll($class, $params, $apiKey);
@@ -31,7 +31,7 @@ class Shippo_Account extends Shippo_ApiResource
 	/**
 	 *
 	 */
-	public static function retrieve(string $id, ?string $apiKey = null): Shippo_Account
+	public static function retrieve(string $id, ?string $apiKey = null): Shippo_Object
 	{
 		$class = get_class();
 		return self::_scopedRetrieve($class, $id, $apiKey);
@@ -40,7 +40,7 @@ class Shippo_Account extends Shippo_ApiResource
 	/**
 	 *
 	 */
-	public static function update(string $id, array $params, ?string $apiKey = null): Shippo_Account
+	public static function update(string $id, array $params, ?string $apiKey = null): Shippo_Object
 	{
 		$class = get_class();
 		return self::_scopedUpdate($class, $id, $params, $apiKey);
